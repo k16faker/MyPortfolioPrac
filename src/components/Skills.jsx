@@ -6,6 +6,13 @@ const SkillList = [
   { name: "CSS", percent: "80%" },
   { name: "JavaScript", percent: "70%" },
   { name: "React", percent: "80%" },
+  { name: "TailwindCSS", percent: "80%" },
+];
+
+const StudyList = [
+  { name: "TypeScript", percent: "50%" },
+  { name: "Next.js", percent: "60%" },
+  { name: "Node.js", percent: "30%" },
 ];
 
 const Skills = () => {
@@ -26,7 +33,18 @@ const Skills = () => {
           ))}
         </ul>
       </div>
-      <div className="w-1/2"></div>
+      <div className="w-1/2">
+        <h1 className="text-center font-bold text-3xl font-serif">Studying</h1>
+        <ul className="">
+          {StudyList.map((skill, index) => (
+            <SkillsComponent
+              key={index}
+              name={skill.name}
+              percent={skill.percent}
+            />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
