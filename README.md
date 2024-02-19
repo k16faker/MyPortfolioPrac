@@ -4,3 +4,8 @@
  - React
  - TailwindCSS
  - react-router-dom, react-scroll, react-icons 등의 라이브러리
+ - firebase hosting
+
+
+# 호스팅 주소
+ - https://forportfoliocontact.web.app/
