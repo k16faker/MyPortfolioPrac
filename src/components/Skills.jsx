@@ -22,7 +22,7 @@ const Skills = () => {
       className="flex justify-center items-center w-full h-[calc(100vh-80px)] text-white"
     >
       <div className="w-1/2 justify-center">
-        <h1 className="text-center font-bold text-3xl font-serif">Skills</h1>
+        <h1 className="text-center font-bold text-3xl font-mono">사용 가능한 기술</h1>
         <ul className="">
           {SkillList.map((skill, index) => (
             <SkillsComponent
@@ -34,7 +34,7 @@ const Skills = () => {
         </ul>
       </div>
       <div className="w-1/2">
-        <h1 className="text-center font-bold text-3xl font-serif">Studying</h1>
+        <h1 className="text-center font-bold text-3xl font-mono">이건 공부중이에요!</h1>
         <ul className="">
           {StudyList.map((skill, index) => (
             <SkillsComponent

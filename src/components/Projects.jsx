@@ -6,23 +6,37 @@ import todolist from "../images/todolist.png";
 const projectsList = [
   {
     name: "Todolist",
-    description: "This is my first toy-project. I made a todolist using React.js.",
+    description: "제 첫번째 토이 프로젝트입니다. React.js, firebase를 사용하여 만든 투두리스트입니다.",
     imgsrc: {todolist},
     hosting: 'https://mylisttest-be9b5.web.app/',
     gitlink:"https://github.com/k16faker/TodoList_first"
   },
   {
     name: "StreamerInfo",
-    description: "This is my second toy-project. You can search streamer's information using Twitch API.",
+    description: "제 두번째 토이 프로젝트입니다. React.js, firebase를 사용하여 Twitch 스트리머의 정보를 알 수 있는 웹사이트입니다. Twitch가 한국 서비스를 종료해 쓸모가 없어졌지만요",
     imgsrc: "https://via.placeholder.com/150",
     hosting: "https://twitchinfoprac.vercel.app/",
     gitlink: "https://github.com/k16faker/TwitchInfoPractice"
   },
   {
     name: "XX-inside",
-    description: "This is my third toy-project. I made a community website using React.js, vite, firebase.",
+    description: "세번째 토이 프로젝트입니다. React.js, firebase를 사용하여 만든 유사 커뮤니티입니다. 특이점으론 CRA가 아닌 Vite를 사용했습니다.",
     hosting: "https://inside-practice-7224c.web.app/",
     gitlink: "https://github.com/k16faker/xxinsideboard",
+  },
+  {
+    name: "My-Community",
+    description: "세번째 토이 프로젝트인 XX-inside를 개량해서 만든, 저만의 커뮤니티 토이프로젝트입니다. React.js와 Firebase를 사용했고, 커뮤니티를 자주 하신 분은 바로 알아보실 사이트를 참고하여 만들었습니다.",
+    imgsrc: "https://via.placeholder.com/150",
+    hosting: "https://mycommunity-rho.vercel.app/",
+    gitlink: "https://github.com/k16faker/community",
+  },
+  {
+    name: "약간의 반응형",
+    description: "포트폴리오의 프로젝트 파트엔, 약간의 반응형 웹이 적용되어있습니다! 화면의 좌우 길이가 줄어들수록 가로에 3개, 2개, 1개씩 줄어들어 보이게됩니다.",
+    imgsrc: "https://via.placeholder.com/150",
+    hosting: "https://mycommunity-rho.vercel.app/",
+    gitlink: "https://github.com/k16faker/community",
   }
 ];
 
@@ -34,7 +48,7 @@ const Projects = () => {
     >
       <h1 className="text-3xl">Projects</h1>
       <div className="w-full p-4 mt-4">
-        <ul className="grid grid-cols-4 gap-4">
+        <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projectsList.map((project, index) => (
             <ProjectComponent
               key={index}
