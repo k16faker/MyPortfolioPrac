@@ -1,23 +1,23 @@
 
+import { IoLinkOutline } from "react-icons/io5";
+import { FaGithubSquare } from "react-icons/fa";
 
 import React from 'react'
 
 const ProjectComponent = ({name, description, imgsrc, gitlink, hosting}) => {
   return (
-    <li className='text-center justify-center items-center font-mono'>
-      <div className='w-1/2 bg-slate-400 mx-auto p-3 rounded-lg text-black'>
+    <li className='h-[400px] text-center justify-center items-center font-mono'>
+      <div className='relative w-full h-full bg-black mx-auto p-3 rounded-lg'>
         <div className='my-10 text-white'>
           <h1>{name}</h1>
           <p className='mt-5'>{description}</p>
         </div>
-        <div className='mt-10 p-2 border rounded-lg px-3 mx-auto'>
-          <p onClick={()=>window.open(hosting)} className='hover:cursor-pointer'>호스팅 링크</p>
+        <div>
+            <img src={imgsrc} alt={name} className='w-[200px] h-[150px] mx-auto' />
         </div>
-        {/* <div className='w-full h-auto overflow-hidden'>
-          <img className='w-full h-auto block mx-auto overflow-hidden' src={imgsrc} alt={name}/>
-        </div> */}
-        <div className='mt-10 p-2 border rounded-lg px-3 mx-auto'>
-          <p onClick={()=>window.open(gitlink)} className='hover:cursor-pointer'>깃허브에서 보기</p>
+        <div className="flex absolute bottom-1 right-1">
+          <IoLinkOutline className="hover:cursor-pointer" size={40} onClick={()=>window.open(hosting)}/>
+          <FaGithubSquare className="hover:cursor-pointer" size={40} onClick={()=>window.open(gitlink)}/>
         </div>
       </div>
     </li>
