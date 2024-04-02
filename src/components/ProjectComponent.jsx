@@ -13,7 +13,7 @@ const ProjectComponent = ({name, description, imgsrc, gitlink, hosting}) => {
           <p className='mt-5'>{description}</p>
         </div>
         <div>
-            <img src={imgsrc} alt={name} className='w-[200px] h-[150px] mx-auto' />
+            <img src={imgsrc} alt={name} className='w-[250px] h-[150px] mx-auto' />
         </div>
         <div className="flex absolute bottom-1 right-1">
           <IoLinkOutline className="hover:cursor-pointer" size={40} onClick={()=>window.open(hosting)}/>
