@@ -13,6 +13,7 @@ const StudyList = [
   { name: "TypeScript", percent: "50%" },
   { name: "Next.js", percent: "60%" },
   { name: "Node.js", percent: "30%" },
+  { name: "Spring Boot", percent: "30%" },
 ];
 
 const Skills = () => {
