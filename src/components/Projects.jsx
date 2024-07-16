@@ -35,7 +35,7 @@ const projectsList = [
   {
     name: "Cocktail-List",
     description: "여러 칵테일에 대한 정보를 제공해주는 토이프로젝트입니다. 칵테일에 대한 정보가 있는 오픈 API를 활용하여 제작중에 있습니다..",
-    imgsrc: "",
+    imgsrc: "/images/Cocktail.png",
     hosting: "https://cocktail-list-five.vercel.app/",
     gitlink: "https://github.com/k16faker/CocktailList",
   },
