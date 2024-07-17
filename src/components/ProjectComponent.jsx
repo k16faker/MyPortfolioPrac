@@ -6,7 +6,7 @@ import React from 'react'
 
 const ProjectComponent = ({name, description, imgsrc, gitlink, hosting}) => {
   return (
-    <li className='h-[400px] text-center justify-center items-center font-mono'>
+    <li className='h-[400px] text-center justify-center items-center font-NG'>
       <div className='relative w-full h-full bg-black mx-auto p-3 rounded-lg'>
         <div className='my-10 text-white'>
           <h1>{name}</h1>
