@@ -40,11 +40,11 @@ const projectsList = [
     gitlink: "https://github.com/k16faker/CocktailList",
   },
   {
-    name: "약간의 반응형",
-    description: "포트폴리오의 프로젝트 파트엔, 약간의 반응형 웹이 적용되어있습니다! 화면의 좌우 길이가 줄어들수록 가로에 3개, 2개, 1개씩 줄어들어 보이게됩니다.",
-    imgsrc: "https://via.placeholder.com/150",
-    hosting: "https://mycommunity-rho.vercel.app/",
-    gitlink: "https://github.com/k16faker/community",
+    name: "B-Market",
+    description: "FakeStore API를 활용하여 만든 토이프로젝트입니다. React.js와 Redux를 사용하여 만들었습니다.",
+    imgsrc: "/images/store.png",
+    hosting: "https://fakestore-ivory.vercel.app/",
+    gitlink: "https://github.com/k16faker/fakestore",
   }
 ];
 
