@@ -43,7 +43,7 @@ const projectsList = [
     name: "B-Market",
     description: "FakeStore API를 활용하여 만든 토이프로젝트입니다. React.js와 Redux를 사용하여 만들었습니다.",
     imgsrc: "/images/store.png",
-    hosting: "https://fakestore-ivory.vercel.app/",
+    hosting: "https://fakestore-peach.vercel.app/",
     gitlink: "https://github.com/k16faker/fakestore",
   }
 ];
